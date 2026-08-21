@@ -1,0 +1,11 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "app.gethu.app",
+      "sha256_cert_fingerprints":
+        ["12:F6:AB:FA:BF:63:8F:F6:DB:BF:14:DF:7B:95:07:03:54:29:7E:59:C0:D3:B1:81:57:CB:15:4F:31:C9:06:8E"]
+    }
+  }
+]
