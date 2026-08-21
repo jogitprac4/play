@@ -1,67 +1,1962 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Terms of Service | GETHU</title>
-    <meta name="description" content="GETHU Terms of Service for the GETHU mobile application.">
-    <link rel="stylesheet" href="/assets/style.css">
-</head>
-<body>
-<header class="site-header">
-    <div class="header-inner">
-        <a class="brand" href="/">GETHU</a>
-        <nav class="nav" aria-label="Main navigation">
-            <a href="/privacy">Privacy</a>
-            <a href="/data-protection">Data Protection</a>
-            <a href="/security">Security</a>
-            <a href="/terms">Terms</a>
-            <a href="/contact">Contact</a>
-        </nav>
-    </div>
-</header>
-<main class="container">
-    <article class="card">
-        <h1>GETHU Terms of Service</h1>
-        <div class="meta">Last updated: August 20, 2026</div>
-        
-<p>These Terms of Service govern your use of the GETHU mobile application.</p>
-<h2>1. Using GETHU</h2>
-<p>You agree to use GETHU lawfully and in accordance with these Terms, applicable laws, and the application's rules and guidelines.</p>
-<h2>2. Accounts</h2>
-<p>You are responsible for maintaining the security of your account and for activity carried out through your account. You must provide information that is accurate and not misleading where account information is requested.</p>
-<h2>3. User Content</h2>
-<p>You remain responsible for content you submit or share through GETHU. You must have the rights and permissions necessary to submit that content and must not use the service to distribute unlawful, infringing, abusive, or harmful material.</p>
-<h2>4. Prohibited Conduct</h2>
-<ul>
-<li>Do not use GETHU for unlawful activity.</li>
-<li>Do not attempt to gain unauthorized access to accounts, systems, or services.</li>
-<li>Do not interfere with or disrupt the operation or security of GETHU.</li>
-<li>Do not impersonate another person or misrepresent your identity in a deceptive manner.</li>
-<li>Do not use the service to harass, threaten, exploit, or harm others.</li>
-</ul>
-<h2>5. Enforcement</h2>
-<p>We may take reasonable action, including restricting or terminating access, when necessary to protect users, the service, or comply with legal requirements.</p>
-<h2>6. Changes</h2>
-<p>We may update these Terms from time to time. Continued use of GETHU after an update may constitute acceptance of the revised Terms where permitted by law.</p>
-<h2>7. Contact</h2>
-<p>Questions about these Terms can be sent to <a href="mailto:support@gethu.app">support@gethu.app</a>.</p>
 
-    </article>
-</main>
-<footer class="footer">
-    <div class="footer-inner">
-        <div class="footer-links">
-            <a href="/privacy">Privacy Policy</a>
-            <a href="/data-protection">Data Protection</a>
-            <a href="/security">Security</a>
-            <a href="/terms">Terms</a>
-            <a href="/community-guidelines">Community Guidelines</a>
-            <a href="/account-deletion">Account Deletion</a>
-            <a href="/contact">Contact</a>
-        </div>
-        <div>© 2026 GETHU. All rights reserved.</div>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <meta
+        name="description"
+        content="GETHU Terms of Service governing the use of the GETHU mobile application and services."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <title>Terms of Service | GETHU</title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            margin: 0;
+            padding: 0;
+
+            scroll-behavior: smooth;
+
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+
+            background: #ffffff;
+            color: #171717;
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            font-size: 16px;
+            line-height: 1.65;
+
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        a {
+            color: inherit;
+        }
+
+
+        /* =========================================================
+           HEADER
+           ========================================================= */
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255, 255, 255, 0.95);
+
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+
+            border-bottom: 1px solid #e9e9e9;
+        }
+
+        .header-inner {
+            width: 100%;
+            max-width: 920px;
+
+            min-height: 62px;
+
+            margin: 0 auto;
+            padding: 0 18px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            color: #111111;
+
+            text-decoration: none;
+
+            font-size: 21px;
+            font-weight: 800;
+
+            letter-spacing: 0.12em;
+        }
+
+        .desktop-nav {
+            display: none;
+        }
+
+        .menu-button {
+            width: 42px;
+            height: 42px;
+
+            padding: 9px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            gap: 5px;
+
+            background: #ffffff;
+
+            border: 1px solid #dedede;
+            border-radius: 10px;
+
+            cursor: pointer;
+        }
+
+        .menu-button span {
+            display: block;
+
+            width: 100%;
+            height: 2px;
+
+            background: #222222;
+
+            border-radius: 2px;
+        }
+
+
+        /* =========================================================
+           MOBILE NAVIGATION
+           ========================================================= */
+
+        .mobile-nav {
+            display: none;
+
+            background: #ffffff;
+
+            border-top: 1px solid #eeeeee;
+
+            padding: 5px 18px 12px;
+        }
+
+        .mobile-nav.open {
+            display: block;
+        }
+
+        .mobile-nav a {
+            display: block;
+
+            padding: 13px 2px;
+
+            color: #444444;
+
+            text-decoration: none;
+
+            font-size: 15px;
+            font-weight: 500;
+
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .mobile-nav a:last-child {
+            border-bottom: none;
+        }
+
+
+        /* =========================================================
+           PAGE
+           ========================================================= */
+
+        .page {
+            width: 100%;
+            max-width: 920px;
+
+            margin: 0 auto;
+
+            padding: 36px 18px 60px;
+        }
+
+
+        /* =========================================================
+           HERO
+           ========================================================= */
+
+        .hero {
+            padding-bottom: 30px;
+        }
+
+        .eyebrow {
+            margin-bottom: 8px;
+
+            color: #777777;
+
+            font-size: 12px;
+            font-weight: 700;
+
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+
+            color: #111111;
+
+            font-size: 38px;
+            font-weight: 800;
+
+            line-height: 1.08;
+
+            letter-spacing: -0.04em;
+        }
+
+        .intro {
+            max-width: 720px;
+
+            margin: 18px 0 0;
+
+            color: #555555;
+
+            font-size: 16px;
+
+            line-height: 1.65;
+        }
+
+        .updated {
+            margin-top: 14px;
+
+            color: #888888;
+
+            font-size: 13px;
+        }
+
+
+        /* =========================================================
+           TERMS SUMMARY
+           ========================================================= */
+
+        .terms-card {
+            max-width: 720px;
+
+            margin: 0 0 38px;
+
+            padding: 21px 20px;
+
+            background: #f7f7f7;
+
+            border: 1px solid #e3e3e3;
+
+            border-radius: 15px;
+        }
+
+        .terms-card-title {
+            margin-bottom: 8px;
+
+            color: #161616;
+
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .terms-card p {
+            margin: 0;
+
+            color: #555555;
+
+            font-size: 14px;
+
+            line-height: 1.65;
+        }
+
+
+        /* =========================================================
+           CONTENT
+           ========================================================= */
+
+        .content {
+            max-width: 720px;
+        }
+
+        section {
+            padding: 0 0 36px;
+
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        section + section {
+            padding-top: 32px;
+        }
+
+        h2 {
+            margin: 0 0 13px;
+
+            color: #161616;
+
+            font-size: 22px;
+            font-weight: 750;
+
+            line-height: 1.3;
+
+            letter-spacing: -0.02em;
+        }
+
+        h3 {
+            margin: 22px 0 7px;
+
+            color: #292929;
+
+            font-size: 16px;
+            font-weight: 700;
+
+            line-height: 1.4;
+        }
+
+        p {
+            margin: 0 0 14px;
+
+            color: #505050;
+
+            font-size: 15px;
+
+            line-height: 1.72;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul,
+        ol {
+            margin: 12px 0 0;
+
+            padding-left: 21px;
+        }
+
+        li {
+            margin: 0 0 9px;
+
+            padding-left: 3px;
+
+            color: #505050;
+
+            font-size: 15px;
+
+            line-height: 1.65;
+        }
+
+        strong {
+            color: #292929;
+
+            font-weight: 650;
+        }
+
+        .content a {
+            color: #111111;
+
+            font-weight: 600;
+
+            text-decoration: underline;
+
+            text-decoration-color: #bdbdbd;
+
+            text-underline-offset: 3px;
+        }
+
+
+        /* =========================================================
+           NOTICE
+           ========================================================= */
+
+        .notice {
+            margin-top: 18px;
+
+            padding: 18px;
+
+            background: #f7f7f7;
+
+            border: 1px solid #e2e2e2;
+
+            border-radius: 14px;
+        }
+
+        .notice-title {
+            margin-bottom: 6px;
+
+            color: #171717;
+
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .notice p {
+            margin: 0;
+
+            color: #666666;
+
+            font-size: 14px;
+
+            line-height: 1.65;
+        }
+
+
+        /* =========================================================
+           PROHIBITED LIST
+           ========================================================= */
+
+        .rule-list {
+            display: grid;
+
+            gap: 10px;
+
+            margin-top: 18px;
+        }
+
+        .rule {
+            padding: 15px 16px;
+
+            background: #fafafa;
+
+            border: 1px solid #e5e5e5;
+
+            border-radius: 13px;
+        }
+
+        .rule-title {
+            margin-bottom: 4px;
+
+            color: #171717;
+
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .rule p {
+            margin: 0;
+
+            color: #666666;
+
+            font-size: 13px;
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================================================
+           RELATED LINKS
+           ========================================================= */
+
+        .related {
+            padding-top: 36px;
+
+            border-bottom: none;
+        }
+
+        .related h2 {
+            margin-bottom: 16px;
+        }
+
+        .related-list {
+            display: grid;
+
+            gap: 10px;
+        }
+
+        .related-link {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 15px;
+
+            padding: 15px 16px;
+
+            background: #fafafa;
+
+            border: 1px solid #e5e5e5;
+
+            border-radius: 13px;
+
+            text-decoration: none;
+        }
+
+        .related-link:hover {
+            background: #f5f5f5;
+
+            border-color: #d7d7d7;
+        }
+
+        .related-link-text {
+            min-width: 0;
+        }
+
+        .related-link-title {
+            display: block;
+
+            color: #171717;
+
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .related-link-description {
+            display: block;
+
+            margin-top: 2px;
+
+            color: #777777;
+
+            font-size: 12px;
+
+            line-height: 1.45;
+        }
+
+        .arrow {
+            flex-shrink: 0;
+
+            color: #888888;
+
+            font-size: 19px;
+        }
+
+
+        /* =========================================================
+           FOOTER
+           ========================================================= */
+
+        .footer {
+            border-top: 1px solid #e8e8e8;
+
+            padding: 28px 18px 38px;
+
+            color: #888888;
+
+            font-size: 12px;
+        }
+
+        .footer-inner {
+            width: 100%;
+            max-width: 920px;
+
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 9px 17px;
+
+            margin-bottom: 18px;
+        }
+
+        .footer-links a {
+            color: #666666;
+
+            font-size: 13px;
+
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #111111;
+        }
+
+
+        /* =========================================================
+           TABLET / DESKTOP
+           ========================================================= */
+
+        @media (min-width: 700px) {
+
+            .header-inner {
+                padding: 0 24px;
+            }
+
+            .desktop-nav {
+                display: flex;
+
+                align-items: center;
+
+                gap: 22px;
+            }
+
+            .desktop-nav a {
+                color: #666666;
+
+                font-size: 13px;
+
+                text-decoration: none;
+            }
+
+            .desktop-nav a:hover {
+                color: #111111;
+            }
+
+            .menu-button,
+            .mobile-nav {
+                display: none !important;
+            }
+
+            .page {
+                padding: 58px 24px 90px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            .intro {
+                font-size: 17px;
+            }
+
+            .terms-card {
+                padding: 24px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .footer {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+
+        }
+
+
+        /* =========================================================
+           REDUCED MOTION
+           ========================================================= */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =============================================================
+     HEADER
+     ============================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a
+            class="brand"
+            href="https://play.gethu.app/gethu"
+            aria-label="GETHU"
+        >
+            GETHU
+        </a>
+
+
+        <nav
+            class="desktop-nav"
+            aria-label="Main navigation"
+        >
+
+            <a href="https://play.gethu.app/privacy">
+                Privacy
+            </a>
+
+            <a href="https://play.gethu.app/data">
+                Data Protection
+            </a>
+
+            <a href="https://play.gethu.app/security">
+                Security
+            </a>
+
+            <a href="https://play.gethu.app/terms">
+                Terms
+            </a>
+
+            <a href="https://play.gethu.app/community">
+                Community
+            </a>
+
+        </nav>
+
+
+        <button
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
     </div>
+
+
+    <nav
+        id="mobile-nav"
+        class="mobile-nav"
+        aria-label="Mobile navigation"
+    >
+
+        <a href="https://play.gethu.app/privacy">
+            Privacy Policy
+        </a>
+
+        <a href="https://play.gethu.app/data">
+            Data Protection
+        </a>
+
+        <a href="https://play.gethu.app/security">
+            Security
+        </a>
+
+        <a href="https://play.gethu.app/terms">
+            Terms of Service
+        </a>
+
+        <a href="https://play.gethu.app/community">
+            Community Guidelines
+        </a>
+
+        <a href="https://play.gethu.app/delete">
+            Account Deletion
+        </a>
+
+        <a href="https://play.gethu.app/contact">
+            Contact
+        </a>
+
+        <a href="https://play.gethu.app/gethu">
+            About GETHU
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =============================================================
+     MAIN
+     ============================================================= -->
+
+<main class="page">
+
+
+    <!-- =========================================================
+         HERO
+         ========================================================= -->
+
+    <header class="hero">
+
+        <div class="eyebrow">
+            GETHU
+        </div>
+
+        <h1>
+            Terms of Service
+        </h1>
+
+        <p class="intro">
+            These Terms of Service explain the rules and
+            conditions that apply when you access or use GETHU
+            and its services.
+        </p>
+
+        <div class="updated">
+            Last updated: August 21, 2026
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================================
+         SUMMARY
+         ========================================================= -->
+
+    <div class="terms-card">
+
+        <div class="terms-card-title">
+            Please read these terms carefully
+        </div>
+
+        <p>
+            By creating an account, accessing, or using GETHU,
+            you agree to these Terms of Service and our
+            <a href="https://play.gethu.app/privacy">
+                Privacy Policy
+            </a>.
+            If you do not agree with these terms, you should not
+            use GETHU.
+        </p>
+
+    </div>
+
+
+
+    <div class="content">
+
+
+        <!-- =====================================================
+             1. ABOUT GETHU
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                1. About GETHU
+            </h2>
+
+            <p>
+                GETHU is a social platform that allows users to
+                create profiles, discover other users, connect
+                through social features, share permitted content,
+                and communicate through supported audio and video
+                calling features.
+            </p>
+
+            <p>
+                The features available through GETHU may change
+                over time as the service develops.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             2. ELIGIBILITY
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                2. Eligibility
+            </h2>
+
+            <p>
+                You may use GETHU only if you are legally permitted
+                to use the service under applicable law.
+            </p>
+
+            <p>
+                You must provide accurate information when creating
+                and maintaining your account and must comply with
+                any applicable age requirements.
+            </p>
+
+            <div class="notice">
+
+                <div class="notice-title">
+                    Important
+                </div>
+
+                <p>
+                    GETHU is not intended for children who are not
+                    permitted to use the service under applicable
+                    law.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             3. YOUR ACCOUNT
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                3. Your GETHU Account
+            </h2>
+
+            <p>
+                Some GETHU features require you to create an
+                account.
+            </p>
+
+            <p>
+                You are responsible for:
+            </p>
+
+            <ul>
+
+                <li>
+                    Providing accurate and current account
+                    information.
+                </li>
+
+                <li>
+                    Keeping your account and authentication
+                    information secure.
+                </li>
+
+                <li>
+                    Activities performed through your account.
+                </li>
+
+                <li>
+                    Notifying GETHU if you believe your account
+                    has been accessed without authorization.
+                </li>
+
+            </ul>
+
+            <p>
+                You must not create an account using another
+                person's identity or information without
+                appropriate authorization.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             4. USER CONTENT
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                4. User Content
+            </h2>
+
+            <p>
+                GETHU may allow you to upload, publish, or share
+                information, photographs, videos, profile
+                information, or other content through the service.
+            </p>
+
+            <p>
+                You remain responsible for the content you submit
+                and for ensuring that you have the necessary rights
+                and permissions to use and share it.
+            </p>
+
+            <p>
+                By submitting content to GETHU, you represent that
+                the content does not violate applicable law, these
+                Terms, or the rights of other people.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             5. CONTENT LICENSE
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                5. Permission to Provide the Service
+            </h2>
+
+            <p>
+                When you upload or share content through GETHU,
+                you grant GETHU the limited permissions reasonably
+                necessary to host, store, process, display, and
+                transmit that content as part of providing the
+                service.
+            </p>
+
+            <p>
+                This permission exists only for the purposes of
+                operating, maintaining, securing, and providing
+                GETHU's services and does not transfer ownership
+                of your content to GETHU.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             6. ACCEPTABLE USE
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                6. Acceptable Use
+            </h2>
+
+            <p>
+                You agree to use GETHU responsibly and in
+                accordance with applicable law.
+            </p>
+
+            <p>
+                You must not use GETHU to:
+            </p>
+
+
+            <div class="rule-list">
+
+
+                <div class="rule">
+
+                    <div class="rule-title">
+                        Harm or threaten others
+                    </div>
+
+                    <p>
+                        Threaten, intimidate, harass, stalk, abuse,
+                        or intentionally harm another person.
+                    </p>
+
+                </div>
+
+
+                <div class="rule">
+
+                    <div class="rule-title">
+                        Impersonate others
+                    </div>
+
+                    <p>
+                        Pretend to be another person, organization,
+                        or entity in a misleading or deceptive way.
+                    </p>
+
+                </div>
+
+
+                <div class="rule">
+
+                    <div class="rule-title">
+                        Misuse the platform
+                    </div>
+
+                    <p>
+                        Attempt to disrupt, overload, damage, or
+                        interfere with GETHU or its infrastructure.
+                    </p>
+
+                </div>
+
+
+                <div class="rule">
+
+                    <div class="rule-title">
+                        Commit fraud
+                    </div>
+
+                    <p>
+                        Use GETHU for scams, fraud, deception,
+                        unauthorized transactions, or other
+                        unlawful activity.
+                    </p>
+
+                </div>
+
+
+                <div class="rule">
+
+                    <div class="rule-title">
+                        Violate intellectual property rights
+                    </div>
+
+                    <p>
+                        Upload or distribute content that infringes
+                        another person's copyright, trademark,
+                        privacy, or other legal rights.
+                    </p>
+
+                </div>
+
+
+                <div class="rule">
+
+                    <div class="rule-title">
+                        Circumvent security
+                    </div>
+
+                    <p>
+                        Attempt to bypass authentication,
+                        authorization, security controls, or other
+                        technical restrictions.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             7. COMMUNITY GUIDELINES
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                7. Community Guidelines
+            </h2>
+
+            <p>
+                Your use of GETHU is also subject to our
+                <a href="https://play.gethu.app/community">
+                    Community Guidelines
+                </a>.
+            </p>
+
+            <p>
+                The Community Guidelines provide additional
+                standards for user behavior, content, interactions,
+                and maintaining a safe and respectful community.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             8. AUDIO VIDEO CALLS
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                8. Audio and Video Calls
+            </h2>
+
+            <p>
+                GETHU may provide audio and video calling between
+                users.
+            </p>
+
+            <p>
+                You are responsible for your conduct during calls
+                and must comply with these Terms and the
+                <a href="https://play.gethu.app/community">
+                    Community Guidelines
+                </a>.
+            </p>
+
+            <p>
+                You must not use calling functionality for
+                harassment, fraud, threats, unlawful activity,
+                exploitation, or other prohibited conduct.
+            </p>
+
+            <p>
+                Call functionality may depend on network
+                connectivity, device capabilities, service
+                availability, and other technical conditions.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             9. PLATFORM AVAILABILITY
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                9. Service Availability
+            </h2>
+
+            <p>
+                We work to keep GETHU available and reliable, but
+                we do not guarantee that the service will always
+                be available, uninterrupted, error-free, or
+                compatible with every device or network.
+            </p>
+
+            <p>
+                GETHU may occasionally be unavailable because of
+                maintenance, upgrades, technical problems,
+                security incidents, network failures, or
+                circumstances outside our reasonable control.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             10. CHANGES TO FEATURES
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                10. Changes to GETHU
+            </h2>
+
+            <p>
+                GETHU may add, modify, suspend, or discontinue
+                features or parts of the service from time to time.
+            </p>
+
+            <p>
+                We may make these changes to improve the service,
+                address security or technical requirements,
+                respond to legal requirements, or for other
+                legitimate operational reasons.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             11. SUSPENSION
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                11. Suspension and Termination
+            </h2>
+
+            <p>
+                GETHU may restrict, suspend, or terminate access
+                to an account or parts of the service when
+                reasonably necessary.
+            </p>
+
+            <p>
+                This may occur if we reasonably believe that:
+            </p>
+
+            <ul>
+
+                <li>
+                    You have violated these Terms.
+                </li>
+
+                <li>
+                    You have violated the Community Guidelines.
+                </li>
+
+                <li>
+                    Your activity presents a security or safety
+                    risk.
+                </li>
+
+                <li>
+                    Your account is being used for fraud, abuse,
+                    or unlawful activity.
+                </li>
+
+                <li>
+                    Your activity could harm GETHU, its users, or
+                    its infrastructure.
+                </li>
+
+                <li>
+                    We are required to do so by law or legal
+                    process.
+                </li>
+
+            </ul>
+
+            <p>
+                Where appropriate, GETHU may provide notice or an
+                opportunity to address an issue before taking
+                action.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             12. ACCOUNT DELETION
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                12. Account Deletion
+            </h2>
+
+            <p>
+                You may request deletion of your GETHU account by
+                contacting GETHU through the account deletion
+                process described on our
+                <a href="https://play.gethu.app/delete">
+                    Account Deletion
+                </a>
+                page.
+            </p>
+
+            <p>
+                Account deletion may result in the loss of access
+                to your account and information associated with it.
+            </p>
+
+            <p>
+                Certain information may need to be retained where
+                required or reasonably necessary for legal,
+                security, fraud prevention, dispute resolution, or
+                other permitted purposes.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             13. PRIVACY
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                13. Privacy
+            </h2>
+
+            <p>
+                Your use of GETHU is also subject to our
+                <a href="https://play.gethu.app/privacy">
+                    Privacy Policy
+                </a>.
+            </p>
+
+            <p>
+                The Privacy Policy explains how GETHU collects,
+                uses, stores, protects, and shares information in
+                connection with the service.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             14. SECURITY
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                14. Security
+            </h2>
+
+            <p>
+                GETHU uses reasonable technical and organizational
+                measures designed to protect the service and
+                information.
+            </p>
+
+            <p>
+                For more information, please see our
+                <a href="https://play.gethu.app/security">
+                    Security
+                </a>
+                page.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             15. THIRD PARTY SERVICES
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                15. Third-Party Services
+            </h2>
+
+            <p>
+                GETHU may depend on third-party services,
+                platforms, infrastructure, or providers to operate
+                certain features.
+            </p>
+
+            <p>
+                Third-party services may have their own terms,
+                policies, and availability requirements. GETHU is
+                not responsible for independent changes or
+                interruptions to services operated by third parties.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             16. INTELLECTUAL PROPERTY
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                16. Intellectual Property
+            </h2>
+
+            <p>
+                GETHU and its associated software, branding,
+                design, logos, trademarks, service features, and
+                other materials are owned by or licensed to GETHU
+                and are protected by applicable intellectual
+                property laws.
+            </p>
+
+            <p>
+                Except as expressly permitted by these Terms, you
+                may not copy, modify, distribute, sell, reverse
+                engineer, or otherwise exploit GETHU's proprietary
+                materials without appropriate authorization.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             17. USER FEEDBACK
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                17. Feedback
+            </h2>
+
+            <p>
+                If you provide suggestions, ideas, or feedback
+                about GETHU, you allow us to use that feedback to
+                improve the service without creating an obligation
+                to compensate you for the feedback.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             18. DISCLAIMERS
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                18. Disclaimers
+            </h2>
+
+            <p>
+                GETHU is provided on an available basis and,
+                except where applicable law requires otherwise, we
+                do not guarantee that the service will always meet
+                every user's expectations or requirements.
+            </p>
+
+            <p>
+                We do not guarantee that the service will be
+                uninterrupted, completely secure, error-free, or
+                free from harmful components.
+            </p>
+
+            <p>
+                Information and interactions provided by other
+                users are their responsibility. GETHU does not
+                guarantee the accuracy, reliability, identity, or
+                conduct of users or user-generated content.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             19. LIMITATION OF LIABILITY
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                19. Limitation of Liability
+            </h2>
+
+            <p>
+                To the maximum extent permitted by applicable law,
+                GETHU and its operators, affiliates, service
+                providers, and representatives will not be liable
+                for indirect, incidental, special, consequential,
+                or similar damages arising from or related to use
+                of the service.
+            </p>
+
+            <p>
+                Nothing in these Terms is intended to exclude or
+                limit liability that cannot lawfully be excluded or
+                limited under applicable law.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             20. INDEMNIFICATION
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                20. Your Responsibility
+            </h2>
+
+            <p>
+                To the extent permitted by applicable law, you are
+                responsible for your use of GETHU and for content
+                or activity associated with your account.
+            </p>
+
+            <p>
+                You agree to cooperate with reasonable efforts to
+                address claims or issues arising from your
+                violation of these Terms or applicable law.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             21. GOVERNING LAW
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                21. Governing Law
+            </h2>
+
+            <p>
+                These Terms are subject to applicable law.
+                Where permitted by law, disputes relating to
+                GETHU or these Terms will be handled by the courts
+                or legal authorities having appropriate
+                jurisdiction.
+            </p>
+
+            <p>
+                Nothing in this section is intended to remove any
+                rights or protections that cannot lawfully be
+                excluded under applicable law.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             22. CHANGES TO TERMS
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                22. Changes to These Terms
+            </h2>
+
+            <p>
+                GETHU may update these Terms from time to time.
+            </p>
+
+            <p>
+                When material changes are made, we may provide
+                appropriate notice through the application or
+                another reasonable method.
+            </p>
+
+            <p>
+                The updated version will include a revised
+                <strong>Last updated</strong> date.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             23. CONTACT
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                23. Contact GETHU
+            </h2>
+
+            <p>
+                If you have questions about these Terms or the
+                GETHU service, please contact us through our
+                <a href="https://play.gethu.app/contact">
+                    Contact
+                </a>
+                page.
+            </p>
+
+            <p>
+                GETHU support can be reached at:
+            </p>
+
+            <p>
+                <a href="mailto:support@gethu.app">
+                    support@gethu.app
+                </a>
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             RELATED LINKS
+             ===================================================== -->
+
+        <section class="related">
+
+            <h2>
+                GETHU Information
+            </h2>
+
+
+            <div class="related-list">
+
+
+                <a
+                    class="related-link"
+                    href="https://play.gethu.app/privacy"
+                >
+
+                    <span class="related-link-text">
+
+                        <span class="related-link-title">
+                            Privacy Policy
+                        </span>
+
+                        <span class="related-link-description">
+                            How GETHU collects and uses information.
+                        </span>
+
+                    </span>
+
+                    <span class="arrow">
+                        ›
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="related-link"
+                    href="https://play.gethu.app/data"
+                >
+
+                    <span class="related-link-text">
+
+                        <span class="related-link-title">
+                            Data Protection
+                        </span>
+
+                        <span class="related-link-description">
+                            How GETHU protects and manages data.
+                        </span>
+
+                    </span>
+
+                    <span class="arrow">
+                        ›
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="related-link"
+                    href="https://play.gethu.app/security"
+                >
+
+                    <span class="related-link-text">
+
+                        <span class="related-link-title">
+                            Security
+                        </span>
+
+                        <span class="related-link-description">
+                            How GETHU protects the platform.
+                        </span>
+
+                    </span>
+
+                    <span class="arrow">
+                        ›
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="related-link"
+                    href="https://play.gethu.app/community"
+                >
+
+                    <span class="related-link-text">
+
+                        <span class="related-link-title">
+                            Community Guidelines
+                        </span>
+
+                        <span class="related-link-description">
+                            Standards for safe and respectful use.
+                        </span>
+
+                    </span>
+
+                    <span class="arrow">
+                        ›
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="related-link"
+                    href="https://play.gethu.app/delete"
+                >
+
+                    <span class="related-link-text">
+
+                        <span class="related-link-title">
+                            Account Deletion
+                        </span>
+
+                        <span class="related-link-description">
+                            Request deletion of your GETHU account.
+                        </span>
+
+                    </span>
+
+                    <span class="arrow">
+                        ›
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="related-link"
+                    href="https://play.gethu.app/contact"
+                >
+
+                    <span class="related-link-text">
+
+                        <span class="related-link-title">
+                            Contact GETHU
+                        </span>
+
+                        <span class="related-link-description">
+                            Contact GETHU support by email.
+                        </span>
+
+                    </span>
+
+                    <span class="arrow">
+                        ›
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- =============================================================
+     FOOTER
+     ============================================================= -->
+
+<footer class="footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-links">
+
+            <a href="https://play.gethu.app/index">
+                GETHU
+            </a>
+
+            <a href="https://play.gethu.app/privacy">
+                Privacy
+            </a>
+
+            <a href="https://play.gethu.app/data">
+                Data Protection
+            </a>
+
+            <a href="https://play.gethu.app/security">
+                Security
+            </a>
+
+            <a href="https://play.gethu.app/terms">
+                Terms
+            </a>
+
+            <a href="https://play.gethu.app/community">
+                Community
+            </a>
+
+            <a href="https://play.gethu.app/delete">
+                Account Deletion
+            </a>
+
+            <a href="https://play.gethu.app/contact">
+                Contact
+            </a>
+
+        </div>
+
+        <div>
+            © 2026 GETHU. All rights reserved.
+        </div>
+
+    </div>
+
 </footer>
+
+
+
+<!-- =============================================================
+     MOBILE MENU
+     ============================================================= -->
+
+<script>
+
+    (function () {
+
+        const button =
+            document.querySelector(".menu-button");
+
+        const menu =
+            document.querySelector("#mobile-nav");
+
+
+        if (!button || !menu) {
+            return;
+        }
+
+
+        button.addEventListener(
+            "click",
+            function () {
+
+                const open =
+                    menu.classList.toggle("open");
+
+
+                button.setAttribute(
+                    "aria-expanded",
+                    open ? "true" : "false"
+                );
+
+
+                button.setAttribute(
+                    "aria-label",
+                    open
+                        ? "Close navigation"
+                        : "Open navigation"
+                );
+
+            }
+        );
+
+
+        menu.querySelectorAll("a").forEach(
+            function (link) {
+
+                link.addEventListener(
+                    "click",
+                    function () {
+
+                        menu.classList.remove("open");
+
+                        button.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+                        button.setAttribute(
+                            "aria-label",
+                            "Open navigation"
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+    })();
+
+</script>
+
+
 </body>
+
 </html>
