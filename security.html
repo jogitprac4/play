@@ -1,63 +1,1686 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Security | GETHU</title>
-    <meta name="description" content="GETHU Security for the GETHU mobile application.">
-    <link rel="stylesheet" href="/assets/style.css">
-</head>
-<body>
-<header class="site-header">
-    <div class="header-inner">
-        <a class="brand" href="/">GETHU</a>
-        <nav class="nav" aria-label="Main navigation">
-            <a href="/privacy">Privacy</a>
-            <a href="/data-protection">Data Protection</a>
-            <a href="/security">Security</a>
-            <a href="/terms">Terms</a>
-            <a href="/contact">Contact</a>
-        </nav>
-    </div>
-</header>
-<main class="container">
-    <article class="card">
-        <h1>GETHU Security</h1>
-        <div class="meta">Last updated: August 20, 2026</div>
-        
-<p>GETHU takes the security of its application and user information seriously.</p>
-<h2>Security Practices</h2>
-<ul>
-<li>Authentication and authorization controls are used to restrict access to protected functionality.</li>
-<li>Secure transport is used for supported network communications.</li>
-<li>Access to production systems is restricted to authorized personnel and services.</li>
-<li>Application and infrastructure components are monitored and maintained as appropriate.</li>
-<li>Security issues are investigated and addressed based on their severity and potential impact.</li>
-</ul>
-<h2>Responsible Security Reporting</h2>
-<p>If you believe you have discovered a security vulnerability affecting GETHU, please report it responsibly rather than publicly disclosing exploit details.</p>
-<div class="notice">Please include enough information for us to understand and reproduce the issue, including the affected feature, steps to reproduce, and any relevant evidence.</div>
-<h2>Report a Security Issue</h2>
-<p>Email: <a href="mailto:support@gethu.app">support@gethu.app</a></p>
-<p>Please do not include passwords, authentication tokens, or unnecessary personal information in a security report.</p>
-<h2>Privacy</h2>
-<p>For information about how user data is handled, see the <a href="/privacy">Privacy Policy</a> and <a href="/data-protection">Data Protection</a> page.</p>
 
-    </article>
-</main>
-<footer class="footer">
-    <div class="footer-inner">
-        <div class="footer-links">
-            <a href="/privacy">Privacy Policy</a>
-            <a href="/data-protection">Data Protection</a>
-            <a href="/security">Security</a>
-            <a href="/terms">Terms</a>
-            <a href="/community-guidelines">Community Guidelines</a>
-            <a href="/account-deletion">Account Deletion</a>
-            <a href="/contact">Contact</a>
-        </div>
-        <div>© 2026 GETHU. All rights reserved.</div>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    >
+
+    <meta
+        name="description"
+        content="GETHU Security information explaining how GETHU protects accounts, data, systems, and the GETHU platform."
+    >
+
+    <meta
+        name="robots"
+        content="index, follow"
+    >
+
+    <title>Security | GETHU</title>
+
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            margin: 0;
+            padding: 0;
+
+            scroll-behavior: smooth;
+
+            -webkit-text-size-adjust: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+
+            background: #ffffff;
+            color: #171717;
+
+            font-family:
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Helvetica,
+                Arial,
+                sans-serif;
+
+            font-size: 16px;
+            line-height: 1.65;
+
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        a {
+            color: inherit;
+        }
+
+
+        /* =========================================================
+           HEADER
+           ========================================================= */
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+
+            background: rgba(255, 255, 255, 0.95);
+
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+
+            border-bottom: 1px solid #e9e9e9;
+        }
+
+        .header-inner {
+            width: 100%;
+            max-width: 920px;
+
+            min-height: 62px;
+
+            margin: 0 auto;
+            padding: 0 18px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .brand {
+            color: #111111;
+
+            text-decoration: none;
+
+            font-size: 21px;
+            font-weight: 800;
+
+            letter-spacing: 0.12em;
+        }
+
+        .desktop-nav {
+            display: none;
+        }
+
+        .menu-button {
+            width: 42px;
+            height: 42px;
+
+            padding: 9px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            gap: 5px;
+
+            background: #ffffff;
+
+            border: 1px solid #dedede;
+            border-radius: 10px;
+
+            cursor: pointer;
+        }
+
+        .menu-button span {
+            display: block;
+
+            width: 100%;
+            height: 2px;
+
+            background: #222222;
+
+            border-radius: 2px;
+        }
+
+
+        /* =========================================================
+           MOBILE NAVIGATION
+           ========================================================= */
+
+        .mobile-nav {
+            display: none;
+
+            background: #ffffff;
+
+            border-top: 1px solid #eeeeee;
+
+            padding: 5px 18px 12px;
+        }
+
+        .mobile-nav.open {
+            display: block;
+        }
+
+        .mobile-nav a {
+            display: block;
+
+            padding: 13px 2px;
+
+            color: #444444;
+
+            text-decoration: none;
+
+            font-size: 15px;
+            font-weight: 500;
+
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .mobile-nav a:last-child {
+            border-bottom: none;
+        }
+
+
+        /* =========================================================
+           PAGE
+           ========================================================= */
+
+        .page {
+            width: 100%;
+            max-width: 920px;
+
+            margin: 0 auto;
+
+            padding: 36px 18px 60px;
+        }
+
+
+        /* =========================================================
+           HERO
+           ========================================================= */
+
+        .hero {
+            padding-bottom: 30px;
+        }
+
+        .eyebrow {
+            margin-bottom: 8px;
+
+            color: #777777;
+
+            font-size: 12px;
+            font-weight: 700;
+
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 0;
+
+            color: #111111;
+
+            font-size: 38px;
+            font-weight: 800;
+
+            line-height: 1.08;
+
+            letter-spacing: -0.04em;
+        }
+
+        .intro {
+            max-width: 720px;
+
+            margin: 18px 0 0;
+
+            color: #555555;
+
+            font-size: 16px;
+
+            line-height: 1.65;
+        }
+
+        .updated {
+            margin-top: 14px;
+
+            color: #888888;
+
+            font-size: 13px;
+        }
+
+
+        /* =========================================================
+           SECURITY SUMMARY
+           ========================================================= */
+
+        .security-card {
+            max-width: 720px;
+
+            margin: 0 0 38px;
+
+            padding: 21px 20px;
+
+            background: #f7f7f7;
+
+            border: 1px solid #e3e3e3;
+
+            border-radius: 15px;
+        }
+
+        .security-card-title {
+            margin-bottom: 8px;
+
+            color: #161616;
+
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .security-card p {
+            margin: 0;
+
+            color: #555555;
+
+            font-size: 14px;
+
+            line-height: 1.65;
+        }
+
+
+        /* =========================================================
+           CONTENT
+           ========================================================= */
+
+        .content {
+            max-width: 720px;
+        }
+
+        section {
+            padding: 0 0 36px;
+
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        section + section {
+            padding-top: 32px;
+        }
+
+        h2 {
+            margin: 0 0 13px;
+
+            color: #161616;
+
+            font-size: 22px;
+            font-weight: 750;
+
+            line-height: 1.3;
+
+            letter-spacing: -0.02em;
+        }
+
+        h3 {
+            margin: 22px 0 7px;
+
+            color: #292929;
+
+            font-size: 16px;
+            font-weight: 700;
+
+            line-height: 1.4;
+        }
+
+        p {
+            margin: 0 0 14px;
+
+            color: #505050;
+
+            font-size: 15px;
+
+            line-height: 1.72;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin: 12px 0 0;
+
+            padding-left: 21px;
+        }
+
+        li {
+            margin: 0 0 9px;
+
+            padding-left: 3px;
+
+            color: #505050;
+
+            font-size: 15px;
+
+            line-height: 1.65;
+        }
+
+        strong {
+            color: #292929;
+
+            font-weight: 650;
+        }
+
+        .content a {
+            color: #111111;
+
+            font-weight: 600;
+
+            text-decoration: underline;
+
+            text-decoration-color: #bdbdbd;
+
+            text-underline-offset: 3px;
+        }
+
+
+        /* =========================================================
+           SECURITY AREAS
+           ========================================================= */
+
+        .security-list {
+            display: grid;
+
+            gap: 10px;
+
+            margin-top: 18px;
+        }
+
+        .security-item {
+            padding: 16px;
+
+            background: #fafafa;
+
+            border: 1px solid #e5e5e5;
+
+            border-radius: 13px;
+        }
+
+        .security-item-title {
+            margin-bottom: 5px;
+
+            color: #171717;
+
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .security-item p {
+            margin: 0;
+
+            color: #666666;
+
+            font-size: 13px;
+
+            line-height: 1.6;
+        }
+
+
+        /* =========================================================
+           SECURITY NOTICE
+           ========================================================= */
+
+        .notice {
+            margin-top: 20px;
+
+            padding: 18px;
+
+            background: #f7f7f7;
+
+            border: 1px solid #e2e2e2;
+
+            border-radius: 14px;
+        }
+
+        .notice-title {
+            margin-bottom: 6px;
+
+            color: #171717;
+
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .notice p {
+            margin: 0;
+
+            color: #666666;
+
+            font-size: 14px;
+
+            line-height: 1.65;
+        }
+
+
+        /* =========================================================
+           CONTACT SECURITY
+           ========================================================= */
+
+        .security-contact {
+            margin-top: 20px;
+
+            padding: 20px;
+
+            background: #fafafa;
+
+            border: 1px solid #e4e4e4;
+
+            border-radius: 14px;
+        }
+
+        .security-contact-title {
+            margin-bottom: 7px;
+
+            color: #171717;
+
+            font-size: 15px;
+            font-weight: 700;
+        }
+
+        .security-contact p {
+            margin-bottom: 10px;
+
+            color: #666666;
+
+            font-size: 14px;
+        }
+
+        .security-email {
+            display: inline-block;
+
+            color: #111111;
+
+            font-size: 16px;
+            font-weight: 700;
+
+            overflow-wrap: anywhere;
+
+            text-decoration: underline;
+
+            text-decoration-color: #bdbdbd;
+
+            text-underline-offset: 3px;
+        }
+
+
+        /* =========================================================
+           RELATED LINKS
+           ========================================================= */
+
+        .related {
+            padding-top: 36px;
+
+            border-bottom: none;
+        }
+
+        .related h2 {
+            margin-bottom: 16px;
+        }
+
+        .related-list {
+            display: grid;
+
+            gap: 10px;
+        }
+
+        .related-link {
+            display: flex;
+
+            align-items: center;
+
+            justify-content: space-between;
+
+            gap: 15px;
+
+            padding: 15px 16px;
+
+            background: #fafafa;
+
+            border: 1px solid #e5e5e5;
+
+            border-radius: 13px;
+
+            text-decoration: none;
+        }
+
+        .related-link:hover {
+            background: #f5f5f5;
+
+            border-color: #d7d7d7;
+        }
+
+        .related-link-text {
+            min-width: 0;
+        }
+
+        .related-link-title {
+            display: block;
+
+            color: #171717;
+
+            font-size: 14px;
+            font-weight: 700;
+        }
+
+        .related-link-description {
+            display: block;
+
+            margin-top: 2px;
+
+            color: #777777;
+
+            font-size: 12px;
+
+            line-height: 1.45;
+        }
+
+        .arrow {
+            flex-shrink: 0;
+
+            color: #888888;
+
+            font-size: 19px;
+        }
+
+
+        /* =========================================================
+           FOOTER
+           ========================================================= */
+
+        .footer {
+            border-top: 1px solid #e8e8e8;
+
+            padding: 28px 18px 38px;
+
+            color: #888888;
+
+            font-size: 12px;
+        }
+
+        .footer-inner {
+            width: 100%;
+            max-width: 920px;
+
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 9px 17px;
+
+            margin-bottom: 18px;
+        }
+
+        .footer-links a {
+            color: #666666;
+
+            font-size: 13px;
+
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #111111;
+        }
+
+
+        /* =========================================================
+           TABLET / DESKTOP
+           ========================================================= */
+
+        @media (min-width: 700px) {
+
+            .header-inner {
+                padding: 0 24px;
+            }
+
+            .desktop-nav {
+                display: flex;
+
+                align-items: center;
+
+                gap: 22px;
+            }
+
+            .desktop-nav a {
+                color: #666666;
+
+                font-size: 13px;
+
+                text-decoration: none;
+            }
+
+            .desktop-nav a:hover {
+                color: #111111;
+            }
+
+            .menu-button,
+            .mobile-nav {
+                display: none !important;
+            }
+
+            .page {
+                padding: 58px 24px 90px;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            .intro {
+                font-size: 17px;
+            }
+
+            .security-card {
+                padding: 24px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .footer {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+
+        }
+
+
+        /* =========================================================
+           REDUCED MOTION
+           ========================================================= */
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+<!-- =============================================================
+     HEADER
+     ============================================================= -->
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <a
+            class="brand"
+            href="https://play.gethu.app/gethu"
+            aria-label="GETHU"
+        >
+            GETHU
+        </a>
+
+
+        <nav
+            class="desktop-nav"
+            aria-label="Main navigation"
+        >
+
+            <a href="https://play.gethu.app/privacy">
+                Privacy
+            </a>
+
+            <a href="https://play.gethu.app/data">
+                Data Protection
+            </a>
+
+            <a href="https://play.gethu.app/security">
+                Security
+            </a>
+
+            <a href="https://play.gethu.app/terms">
+                Terms
+            </a>
+
+            <a href="https://play.gethu.app/community">
+                Community
+            </a>
+
+        </nav>
+
+
+        <button
+            class="menu-button"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            aria-controls="mobile-nav"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
     </div>
+
+
+    <nav
+        id="mobile-nav"
+        class="mobile-nav"
+        aria-label="Mobile navigation"
+    >
+
+        <a href="https://play.gethu.app/privacy">
+            Privacy Policy
+        </a>
+
+        <a href="https://play.gethu.app/data">
+            Data Protection
+        </a>
+
+        <a href="https://play.gethu.app/security">
+            Security
+        </a>
+
+        <a href="https://play.gethu.app/terms">
+            Terms of Service
+        </a>
+
+        <a href="https://play.gethu.app/community">
+            Community Guidelines
+        </a>
+
+        <a href="https://play.gethu.app/delete">
+            Account Deletion
+        </a>
+
+        <a href="https://play.gethu.app/contact">
+            Contact
+        </a>
+
+        <a href="https://play.gethu.app/gethu">
+            About GETHU
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =============================================================
+     MAIN
+     ============================================================= -->
+
+<main class="page">
+
+
+    <!-- =========================================================
+         HERO
+         ========================================================= -->
+
+    <header class="hero">
+
+        <div class="eyebrow">
+            GETHU SECURITY
+        </div>
+
+        <h1>
+            Security
+        </h1>
+
+        <p class="intro">
+            GETHU uses reasonable technical and organizational
+            measures designed to protect accounts, information,
+            and the systems used to provide the GETHU service.
+        </p>
+
+        <div class="updated">
+            Last updated: August 21, 2026
+        </div>
+
+    </header>
+
+
+
+    <!-- =========================================================
+         SUMMARY
+         ========================================================= -->
+
+    <div class="security-card">
+
+        <div class="security-card-title">
+            Our security approach
+        </div>
+
+        <p>
+            Security is an ongoing part of how we build and
+            operate GETHU. We use access controls, secure
+            communications, monitoring, and other safeguards
+            appropriate to the systems and information involved.
+        </p>
+
+    </div>
+
+
+
+    <div class="content">
+
+
+        <!-- =====================================================
+             1. ACCOUNT SECURITY
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                1. Account Security
+            </h2>
+
+            <p>
+                GETHU uses authentication and authorization
+                mechanisms designed to help protect user accounts
+                and prevent unauthorized access.
+            </p>
+
+            <p>
+                Depending on the functionality being accessed,
+                security controls may include authentication
+                credentials, access tokens, permissions, and
+                server-side authorization checks.
+            </p>
+
+            <div class="security-list">
+
+
+                <div class="security-item">
+
+                    <div class="security-item-title">
+                        Authentication
+                    </div>
+
+                    <p>
+                        Access to protected GETHU functionality
+                        requires appropriate authentication.
+                    </p>
+
+                </div>
+
+
+                <div class="security-item">
+
+                    <div class="security-item-title">
+                        Authorization
+                    </div>
+
+                    <p>
+                        Authenticated users are subject to
+                        authorization controls designed to limit
+                        access to permitted resources and actions.
+                    </p>
+
+                </div>
+
+
+                <div class="security-item">
+
+                    <div class="security-item-title">
+                        Account protection
+                    </div>
+
+                    <p>
+                        Security mechanisms are used to help
+                        protect accounts from unauthorized access
+                        and misuse.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             2. DATA SECURITY
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                2. Data Security
+            </h2>
+
+            <p>
+                GETHU uses reasonable safeguards designed to
+                protect information against unauthorized access,
+                alteration, disclosure, loss, or misuse.
+            </p>
+
+            <p>
+                Depending on the system and type of information,
+                safeguards may include:
+            </p>
+
+            <ul>
+
+                <li>
+                    Secure transmission of information where
+                    appropriate.
+                </li>
+
+                <li>
+                    Authentication and authorization controls.
+                </li>
+
+                <li>
+                    Access restrictions for protected resources.
+                </li>
+
+                <li>
+                    Security logging and monitoring.
+                </li>
+
+                <li>
+                    Infrastructure and application security
+                    controls.
+                </li>
+
+                <li>
+                    Measures intended to detect and respond to
+                    security incidents.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             3. SECURE COMMUNICATION
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                3. Secure Communication
+            </h2>
+
+            <p>
+                Information exchanged between the GETHU
+                application and our services may be transmitted
+                using secure communication mechanisms appropriate
+                to the service and information involved.
+            </p>
+
+            <p>
+                GETHU also uses security controls around
+                authenticated service communication and protected
+                application endpoints where appropriate.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             4. ACCESS CONTROL
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                4. Access Controls
+            </h2>
+
+            <p>
+                Access to systems and information is intended to
+                be limited according to legitimate operational
+                requirements.
+            </p>
+
+            <p>
+                Depending on the system, access may be controlled
+                through authentication, authorization, permissions,
+                service-level controls, and other security
+                mechanisms.
+            </p>
+
+            <p>
+                We seek to avoid unnecessary access to user
+                information and maintain controls appropriate to
+                the systems involved.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             5. MONITORING
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                5. Monitoring and Security Operations
+            </h2>
+
+            <p>
+                GETHU may use logs, monitoring, and other technical
+                mechanisms to help maintain the security,
+                availability, and reliability of the platform.
+            </p>
+
+            <p>
+                Security-related information may be used to
+                investigate suspicious activity, unauthorized
+                access, service abuse, fraud, or other incidents
+                that could affect GETHU or its users.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             6. SECURITY INCIDENTS
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                6. Security Incidents
+            </h2>
+
+            <p>
+                GETHU maintains processes intended to identify,
+                investigate, contain, and respond to security
+                incidents affecting the service.
+            </p>
+
+            <p>
+                When appropriate, we may take steps to protect
+                affected systems, investigate the cause of an
+                incident, reduce its impact, and implement
+                corrective measures.
+            </p>
+
+            <p>
+                Where required by applicable law, GETHU may also
+                provide appropriate notifications regarding
+                qualifying security incidents.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             7. THIRD PARTY PROVIDERS
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                7. Third-Party Service Providers
+            </h2>
+
+            <p>
+                GETHU may rely on third-party providers for
+                infrastructure and technical services required to
+                operate the application.
+            </p>
+
+            <p>
+                These services may include hosting, storage,
+                authentication, notifications, communications,
+                media processing, security, and other technical
+                infrastructure.
+            </p>
+
+            <p>
+                Where third parties process information on behalf
+                of GETHU, we seek to use providers appropriate to
+                the services they provide and the information they
+                handle.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             8. CALL SECURITY
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                8. Audio and Video Calling
+            </h2>
+
+            <p>
+                GETHU may provide real-time audio and video calling
+                functionality.
+            </p>
+
+            <p>
+                Calling functionality may require technical
+                information to establish, maintain, secure, and
+                terminate a connection between participants.
+            </p>
+
+            <p>
+                GETHU applies appropriate security controls to the
+                systems used to provide calling functionality.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             9. USER RESPONSIBILITY
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                9. Protecting Your Account
+            </h2>
+
+            <p>
+                Users also play an important role in keeping their
+                accounts secure.
+            </p>
+
+            <ul>
+
+                <li>
+                    Keep your account credentials and authentication
+                    information private.
+                </li>
+
+                <li>
+                    Do not knowingly share access to your account
+                    with other people.
+                </li>
+
+                <li>
+                    Keep your device and operating system updated.
+                </li>
+
+                <li>
+                    Use appropriate security protections on the
+                    device used to access GETHU.
+                </li>
+
+                <li>
+                    Contact GETHU if you believe your account has
+                    been accessed without authorization.
+                </li>
+
+            </ul>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             10. SECURITY LIMITATIONS
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                10. Important Security Limitation
+            </h2>
+
+            <div class="notice">
+
+                <div class="notice-title">
+                    No system can guarantee absolute security
+                </div>
+
+                <p>
+                    Although GETHU uses reasonable security
+                    measures, no method of electronic transmission,
+                    storage, or internet communication can be
+                    guaranteed to be completely secure.
+                </p>
+
+            </div>
+
+            <p style="margin-top: 18px;">
+                We therefore cannot guarantee that information
+                will never be accessed, disclosed, altered, or
+                destroyed as a result of circumstances beyond our
+                reasonable control.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             11. SECURITY REPORTING
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                11. Report a Security Concern
+            </h2>
+
+            <p>
+                If you believe you have discovered a security
+                issue involving GETHU, please report it to:
+            </p>
+
+
+            <div class="security-contact">
+
+                <div class="security-contact-title">
+                    GETHU Security
+                </div>
+
+                <p>
+                    Send security-related concerns to:
+                </p>
+
+                <a
+                    class="security-email"
+                    href="mailto:support@gethu.app?subject=GETHU%20Security%20Concern"
+                >
+                    support@gethu.app
+                </a>
+
+            </div>
+
+            <p style="margin-top: 16px;">
+                When reporting a security concern, please provide
+                enough information for us to understand and
+                investigate the issue.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             12. DATA PROTECTION
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                12. Data Protection
+            </h2>
+
+            <p>
+                Security is one part of GETHU's broader approach
+                to protecting information.
+            </p>
+
+            <p>
+                For additional information about how GETHU
+                handles, protects, and retains information, see our
+                <a href="https://play.gethu.app/data">
+                    Data Protection
+                </a>
+                page and
+                <a href="https://play.gethu.app/privacy">
+                    Privacy Policy
+                </a>.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             13. CHANGES
+             ===================================================== -->
+
+        <section>
+
+            <h2>
+                13. Changes to This Security Information
+            </h2>
+
+            <p>
+                GETHU may update this page as our security
+                practices, systems, services, or applicable
+                requirements change.
+            </p>
+
+            <p>
+                When we make changes, we will update the
+                <strong>Last updated</strong> date shown at the
+                top of this page.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             RELATED LINKS
+             ===================================================== -->
+
+        <section class="related">
+
+            <h2>
+                GETHU Information
+            </h2>
+
+
+            <div class="related-list">
+
+
+                <a
+                    class="related-link"
+                    href="https://play.gethu.app/privacy"
+                >
+
+                    <span class="related-link-text">
+
+                        <span class="related-link-title">
+                            Privacy Policy
+                        </span>
+
+                        <span class="related-link-description">
+                            How GETHU collects and uses information.
+                        </span>
+
+                    </span>
+
+                    <span class="arrow">
+                        ›
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="related-link"
+                    href="https://play.gethu.app/data"
+                >
+
+                    <span class="related-link-text">
+
+                        <span class="related-link-title">
+                            Data Protection
+                        </span>
+
+                        <span class="related-link-description">
+                            How GETHU protects and manages data.
+                        </span>
+
+                    </span>
+
+                    <span class="arrow">
+                        ›
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="related-link"
+                    href="https://play.gethu.app/community"
+                >
+
+                    <span class="related-link-text">
+
+                        <span class="related-link-title">
+                            Community Guidelines
+                        </span>
+
+                        <span class="related-link-description">
+                            Guidelines for safe and respectful use.
+                        </span>
+
+                    </span>
+
+                    <span class="arrow">
+                        ›
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="related-link"
+                    href="https://play.gethu.app/terms"
+                >
+
+                    <span class="related-link-text">
+
+                        <span class="related-link-title">
+                            Terms of Service
+                        </span>
+
+                        <span class="related-link-description">
+                            Rules and conditions for using GETHU.
+                        </span>
+
+                    </span>
+
+                    <span class="arrow">
+                        ›
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="related-link"
+                    href="https://play.gethu.app/delete"
+                >
+
+                    <span class="related-link-text">
+
+                        <span class="related-link-title">
+                            Account Deletion
+                        </span>
+
+                        <span class="related-link-description">
+                            Request deletion of your GETHU account.
+                        </span>
+
+                    </span>
+
+                    <span class="arrow">
+                        ›
+                    </span>
+
+                </a>
+
+
+                <a
+                    class="related-link"
+                    href="https://play.gethu.app/contact"
+                >
+
+                    <span class="related-link-text">
+
+                        <span class="related-link-title">
+                            Contact GETHU
+                        </span>
+
+                        <span class="related-link-description">
+                            Contact GETHU support by email.
+                        </span>
+
+                    </span>
+
+                    <span class="arrow">
+                        ›
+                    </span>
+
+                </a>
+
+
+            </div>
+
+        </section>
+
+
+    </div>
+
+</main>
+
+
+
+<!-- =============================================================
+     FOOTER
+     ============================================================= -->
+
+<footer class="footer">
+
+    <div class="footer-inner">
+
+        <div class="footer-links">
+
+            <a href="https://play.gethu.app/index">
+                GETHU
+            </a>
+
+            <a href="https://play.gethu.app/privacy">
+                Privacy
+            </a>
+
+            <a href="https://play.gethu.app/data">
+                Data Protection
+            </a>
+
+            <a href="https://play.gethu.app/security">
+                Security
+            </a>
+
+            <a href="https://play.gethu.app/terms">
+                Terms
+            </a>
+
+            <a href="https://play.gethu.app/community">
+                Community
+            </a>
+
+            <a href="https://play.gethu.app/delete">
+                Account Deletion
+            </a>
+
+            <a href="https://play.gethu.app/contact">
+                Contact
+            </a>
+
+        </div>
+
+        <div>
+            © 2026 GETHU. All rights reserved.
+        </div>
+
+    </div>
+
 </footer>
+
+
+
+<!-- =============================================================
+     MOBILE MENU
+     ============================================================= -->
+
+<script>
+
+    (function () {
+
+        const button =
+            document.querySelector(".menu-button");
+
+        const menu =
+            document.querySelector("#mobile-nav");
+
+
+        if (!button || !menu) {
+            return;
+        }
+
+
+        button.addEventListener(
+            "click",
+            function () {
+
+                const open =
+                    menu.classList.toggle("open");
+
+
+                button.setAttribute(
+                    "aria-expanded",
+                    open ? "true" : "false"
+                );
+
+
+                button.setAttribute(
+                    "aria-label",
+                    open
+                        ? "Close navigation"
+                        : "Open navigation"
+                );
+
+            }
+        );
+
+
+        menu.querySelectorAll("a").forEach(
+            function (link) {
+
+                link.addEventListener(
+                    "click",
+                    function () {
+
+                        menu.classList.remove("open");
+
+                        button.setAttribute(
+                            "aria-expanded",
+                            "false"
+                        );
+
+                        button.setAttribute(
+                            "aria-label",
+                            "Open navigation"
+                        );
+
+                    }
+                );
+
+            }
+        );
+
+    })();
+
+</script>
+
+
 </body>
+
 </html>
